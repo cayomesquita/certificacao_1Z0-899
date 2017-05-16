@@ -30,6 +30,11 @@
 		<servlet-name>SessionTest</servlet-name>
 		<servlet-class>br.com.example.web.SessionTestServlet</servlet-class>
 	</servlet>
+
+	<servlet>
+		<servlet-name>CookieTest</servlet-name>
+		<servlet-class>br.com.example.web.CookieTestServlet</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>Ch3 Beer</servlet-name>
@@ -50,6 +55,11 @@
 		<servlet-name>SessionTest</servlet-name>
 		<url-pattern>/SessionTest.do</url-pattern>
 	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CookieTest</servlet-name>
+		<url-pattern>CookieTest.do</url-pattern>
+	<servlet-mapping>
 
 	<listener>
 		<listener-class>
