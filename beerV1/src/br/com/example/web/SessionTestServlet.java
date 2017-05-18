@@ -3,6 +3,7 @@ package br.com.example.web;
 import javax.servlet.*;    
 import javax.servlet.http.*;    
 import java.io.*;
+import br.com.example.model.*;
 
 public class SessionTestServlet extends HttpServlet {
 
@@ -13,6 +14,7 @@ public class SessionTestServlet extends HttpServlet {
 			out.println("You're wellcome");
 			out.println("ID da nova sessão: " + session.getId());
 			out.println("Timeout: " + session.getMaxInactiveInterval());
+			session.setAttribute("dog", new Dog("DogBound"));
 		} else {
 			out.println("I'm happy to see you again!");
 			out.println("ID da sessão: " + session.getId());
