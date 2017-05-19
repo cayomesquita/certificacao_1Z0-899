@@ -58,12 +58,15 @@
 
 	<servlet-mapping>
 		<servlet-name>CookieTest</servlet-name>
-		<url-pattern>CookieTest.do</url-pattern>
-	<servlet-mapping>
+		<url-pattern>/CookieTest.do</url-pattern>
+	</servlet-mapping>
 
 	<listener>
 		<listener-class>
 			br.com.example.web.listeners.MyServletContextListener
+		</listener-class>
+		<listener-class>
+			br.com.example.web.listeners.SessionCounterListener
 		</listener-class>
 	</listener>
 	

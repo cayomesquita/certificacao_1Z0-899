@@ -4,6 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;    
 import java.io.*;
 import br.com.example.model.*;
+import br.com.example.web.listeners.*;
 
 public class SessionTestServlet extends HttpServlet {
 
@@ -21,5 +22,6 @@ public class SessionTestServlet extends HttpServlet {
 			out.println("Tempo da criação da sessão: " + session.getCreationTime());
 			out.println("Tempo da último acesso: " + session.getLastAccessedTime());
 		}
+		out.println("Active session's number: " + SessionCounterListener.getActiveSessions());
 	}
 }
